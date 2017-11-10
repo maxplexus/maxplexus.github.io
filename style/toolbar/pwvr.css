@@ -1,0 +1,160 @@
+html body{margin:0px;padding:0px;overflow:hidden;width:100%;height:100%;-ms-touch-action: none;}
+img{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+}
+.containerBar{
+    position:absolute;
+    z-index:9999;
+    left: 50%;
+    top:100%;
+}
+.DivToolBar{
+    position:absolute;
+    width:307px;
+    z-index:9999;
+    left: -153.5px;
+    top:-111px;
+    height:111px;
+    overflow:hidden;
+}
+
+.DivToolBarTipCon{
+    position: absolute;left:50%;top:1%;
+}
+.DivToolBarTip{
+    position:absolute;
+    height:30px;
+    width:160px;
+    left:-80px;
+    text-align:center;
+    font:bold 12px Verdana, Geneva, sans-serif;
+    color:#fff;
+    text-shadow:1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
+}
+
+.DivToolBarCon{
+    position: absolute;
+    background:url(tbbg.png) 0px 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+.DivToolBarConShow{
+    top: 0px;
+}
+.DivToolBarCon div{
+    cursor: pointer;
+}
+
+.leftPW{position:absolute;height:41px;width:34px;background:url(tbbg.png) 0px -115px;top:35px;left:2px;}
+.rightPW{position:absolute;height:41px;width:34px;background:url(tbbg.png) -40px -115px;top:35px;left:72px;}
+.upPW{position:absolute;height:33px;width:41px;background:url(tbbg.png) -80px -115px;top:2px;left:34px;}
+.downPW{position:absolute;height:33px;width:41px;background:url(tbbg.png) -125px -115px;top:78px;left:34px;}
+.resetPW{position:absolute;height:41px;width:34px;background:url(tbbg.png) -170px -115px;top:35px;left:37px;}
+.zoominPW{position:absolute;height:40px;width:40px;background:url(tbbg.png) -210px -115px;top:35px;left:106px;}
+.zoomoutPW{position:absolute;height:40px;width:40px;background:url(tbbg.png) -255px -115px;top:35px;left:146px;}
+.stopPW{position:absolute;height:40px;width:40px;background:url(tbbg.png) -45px -160px;top:35px;left:186px;}
+
+.gyroOnPW{position:absolute;height:40px;width:40px;background:url(tbbg.png) 0px -160px;top:35px;left:186px;}
+.gyroPW{position:absolute;height:40px;width:40px;background:url(tbbg.png) -45px -160px;top:35px;left:186px;}
+
+.directionOnPW{position:absolute;height:40px;width:40px;background:url(tbbg.png) -90px -160px;top:35px;left:226px;}
+.directionPW{position:absolute;height:40px;width:40px;background:url(tbbg.png) -135px -160px;top:35px;left:226px;}
+
+.hidePW{position:absolute;height:40px;width:40px;background:url(tbbg.png) -180px -160px;top:35px;left:266px;}
+
+.leftPW:hover{position:absolute;height:41px;width:34px;background:url(tbbg.png) 0px -115px;top:36px;left:3px;}
+.rightPW:hover{position:absolute;height:41px;width:34px;background:url(tbbg.png) -40px -115px;top:36px;left:73px;}
+.upPW:hover{position:absolute;height:33px;width:41px;background:url(tbbg.png) -80px -115px;top:3px;left:35px;}
+.downPW:hover{position:absolute;height:33px;width:41px;background:url(tbbg.png) -125px -115px;top:79px;left:35px;}
+.resetPW:hover{position:absolute;height:41px;width:34px;background:url(tbbg.png) -170px -115px;top:36px;left:38px;}
+.zoominPW:hover{position:absolute;height:40px;width:40px;background:url(tbbg.png) -210px -115px;top:36px;left:107px;}
+.zoomoutPW:hover{position:absolute;height:40px;width:40px;background:url(tbbg.png) -255px -115px;top:36px;left:147px;}
+.gyroOnPW:hover{position:absolute;height:40px;width:40px;background:url(tbbg.png) 0px -160px;top:36px;left:187px;}
+.gyroPW:hover{position:absolute;height:40px;width:40px;background:url(tbbg.png) -45px -160px;top:36px;left:187px;}
+.stopPW:hover{position:absolute;height:40px;width:40px;background:url(tbbg.png) -45px -160px;top:36px;left:187px;}
+.directionOnPW:hover{position:absolute;height:40px;width:40px;background:url(tbbg.png) -90px -160px;top:36px;left:227px;}
+.directionPW:hover{position:absolute;height:40px;width:40px;background:url(tbbg.png) -135px -160px;top:36px;left:227px;}
+.hidePW:hover{position:absolute;height:40px;width:40px;background:url(tbbg.png) -180px -160px;top:36px;left:267px;}
+
+
+.DivToolBarHandlerCon{
+    position: absolute;left:50%;top:100%
+}
+.DivToolBarHandlerCon div{
+    cursor: pointer;
+}
+.DivToolBarHandler{
+    position:absolute;
+    height:26px;
+    width:64px;
+    left: -32px;
+    top: 0px;
+    background:url(tbbg.png) -230px -160px no-repeat;
+}
+.DivToolBarHandlerHidden{
+    top: 0px;
+}
+.DivToolBarHandler:hover{position:absolute;height:26px;width:64px;background:url(tbbg.png) -230px -200px no-repeat;}
+
+/*执行top改变的动画*/
+.ani{-webkit-transition : top 0.5s ease; transition : top 0.5s ease;}
+
+.containerBarMobile{
+    position:absolute;
+    z-index:9999;
+    left: 50%;
+    top:100%;
+
+}
+.DivToolBarMobile{
+    position:absolute;
+    width:346px;
+    height:64px;
+    z-index:9999;
+    left: -173px;
+    top:-74px;
+    overflow:hidden;
+
+}
+.DivToolBarConMobile{
+    position: absolute;
+    background:url(onMobile.png) -420px 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+/*位置1陀螺仪*/
+.gyroOnMobilePW{position:absolute;height:64px;width:64px;background:url(onMobile.png) -350px 0px;top:0px;left:10px;}
+/*陀螺仪状态2*/
+.gyroMobilePW{position:absolute;height:64px;width:64px;background:url(onMobile.png) -280px 0px;top:0px;left:10px;}
+
+/*位置2 拖动方向*/
+.directionOnMobilePW{position:absolute;height:64px;width:64px;background:url(onMobile.png) -140px 0px;top:0px;left:96px;}
+/*拖动方向状态2*/
+.directionMobilePW{position:absolute;height:64px;width:64px;background:url(onMobile.png) -210px 0px;top:0px;left:96px;}
+/*位置3 重置*/
+.resetMobilePW{position:absolute;height:64px;width:64px;background:url(onMobile.png) -68px 0px;top:0px;left:183px;}
+/*位置4 隐藏*/
+.hideMobilePW{position:absolute;height:64px;width:64px;background:url(onMobile.png) 0px 0px;top:0px;left:270px;}
+
+.DivToolBarHandlerMobile{
+    position:absolute;
+    height:28px;
+    width:64px;
+    left: -32px;
+    top: 0px;
+    background:url(onMobile.png) -800px 0px no-repeat;
+}
+.DivToolBarHandlerMobile:hover{
+    position:absolute;
+    height:28px;
+    width:64px;
+    left: -32px;
+    top: 0px;
+    background:url(onMobile.png) -800px 0px no-repeat;
+}
+
+
